@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <style>
+        body {
+            background-color: hsl(168, 55%, 81%);
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            background-color: aliceblue;
+            width: 800px;
+            height: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+       .form-row {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+        width: 300px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       }
+       .form-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+       input {
+        border-radius: 10px;
+        border-color:aquamarine;
+        width: 17em;
+        height: 30px;
+       }
+       h3 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+        
+       } 
+       .emailform {
+        display: inline-block;
+        position: relative;
+        text-align: left;
+        padding-top: 10px;  
+       }
+       #email {
+        display: block;
+        width: 34em;
+        height: 30px;
+    }
+    .radio-row {
+        display: flex;
+        gap: 10px;
+        
+    }
+    .radio-option input {
+       margin: 0;
+    }
+      
+    .checkbox-group {
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: right;
+        margin-top: 30px; 
+        margin-bottom: 30px;
+    }
+
+    .checkbox-group input {
+        margin-right: 0;
+        border-color: aqua;
+        
+
+    }
+
+    </style>
+
+</head>
+<body>
+    <form>
+        <h3>Contact Us</h3>
+        <div class="form-row">    
+        <div class="form-group">     
+            <label for="email">First name *</label>
+            <br>
+            <input type="name" id="firstname" name="firstname">
+        </div>
+        <div class="form-group">
+            <label for="lastname">Last name *</label>
+            <br>
+            <input type="name" id="lastname" name="lastname"> 
+        </div>    
+    </div>
+    <br>
+    </div>
+
+    <div class="emailform">
+        <label class="emaillabel" for="email">Email Address *</label>
+        <br>
+        <br>
+        <input type="email" id="email" name="email">
+    </div>
+
+
+    <br>
+    
+
+    <div class="form-group">
+        <label>Query Type <span>*</span></label>
+        <br>
+        <div class="radio-row">
+          <label class="radio-option">
+            <input type="radio" name="query" value="general" required>
+            General Enquiry
+          </label>
+          <label class="radio-option">
+            <input type="radio" name="query" value="support" required>
+            Support Request
+          </label>
+        </div>
+      </div>
+        <br>
+        <br>
+        <br>
+
+      <div class="form-group">
+        <label>
+            Message *
+            
+        </label>
+        <br>
+            
+           <textarea style="border-color: aquamarine; border-radius: 15px;" id="message" name="message" rows="12" cols="60"></textarea>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox">
+        I consent to being contacted by the team *
+      </div>
+        
+
+      <div class="btn">
+        <button style="width: 34em; height: 35px; border-radius: 15px; border-color: aqua; margin-bottom: 20px; background-color: aquamarine; ">Submit</button>
+      </div>
+
+    </form>
+    
+     
+
+</body>
+</html>
